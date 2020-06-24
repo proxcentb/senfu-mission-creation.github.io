@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
+    <title>Senfu</title>
+    <script src="./config.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="coolBox">
+      Project <br>
+      <input type='file' accept='application/json' onchange='openFile(event)'>
+    </div>
+    <div class="coolBox position2Box">
+      Point 2 <br>
+      <input type="number" class="lat" placeholder="Latitude" value="59.950138">
+      <input type="number" class="lon" placeholder="Longitude" value="10.797043">
+    </div>
+    <div class="coolBox position1Box">
+      Point 1 <br>
+      <input type="number" class="lat" placeholder="Latitude" value="59.950051">
+      <input type="number" class="lon" placeholder="Longitude" value="10.797066">
+    </div>
+    <div class="coolBox">
+      Settings <br>
+      <input type="text" spellcheck="false" class="saveAs" placeholder="Title" value="da">
+      <label>
+        <input type="checkbox" class="test">
+        Test
+      </label>
+    </div>
+    <button class="download" onclick="getCSV()">Download</button>
+  </body>
+</html>
